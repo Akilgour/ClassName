@@ -1,0 +1,4 @@
+﻿<#@ template hostspecific="false" language="C#" #>
+<#@ output extension=".txt" #>
+
+Hello, world!
