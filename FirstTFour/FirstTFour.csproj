@@ -55,6 +55,10 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ForEach.txt</LastGenOutput>
     </None>
+    <None Include="ForEachInclude.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ForEachInclude.txt</LastGenOutput>
+    </None>
     <None Include="HelloWorld.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>HelloWorld.txt</LastGenOutput>
@@ -72,6 +76,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ForEach.tt</DependentUpon>
+    </Content>
+    <Content Include="ForEachInclude.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ForEachInclude.tt</DependentUpon>
     </Content>
     <Content Include="HelloWorld.txt">
       <AutoGen>True</AutoGen>
