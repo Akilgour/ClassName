@@ -1,4 +1,4 @@
-﻿<#@ template hostspecific="false" language="C#" #>
+﻿<#@ template debug="true" hostspecific="false" language="C#" #>
 <#@ output extension=".txt" #>
 <#int top = 10;
 
