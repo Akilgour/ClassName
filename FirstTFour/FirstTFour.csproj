@@ -46,6 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ForEach.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ForEach.txt</LastGenOutput>
+    </None>
     <None Include="HelloWorld.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>HelloWorld.txt</LastGenOutput>
@@ -55,6 +59,11 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ForEach.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ForEach.tt</DependentUpon>
+    </Content>
     <Content Include="HelloWorld.txt">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
