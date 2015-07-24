@@ -41,6 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Foo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Foo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TangibleTemplates\Advanced.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Advanced.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TangibleTemplates\Blank.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Blank.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CopyClass.cs" />
     <Compile Include="MyGeneratedClass.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -48,9 +64,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TangibleTemplates\Simple.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Simple.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Foo.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Foo.cs</LastGenOutput>
+    </None>
+    <None Include="TangibleTemplates\Advanced.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Advanced.cs</LastGenOutput>
+    </None>
+    <None Include="TangibleTemplates\Blank.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Blank.cs</LastGenOutput>
+    </None>
     <None Include="ForEach.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ForEach.txt</LastGenOutput>
@@ -67,6 +100,11 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>MyGeneratedClass.cs</LastGenOutput>
     </None>
+    <None Include="TangibleTemplates\Simple.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Simple.cs</LastGenOutput>
+    </None>
+    <None Include="SimpleClassGen.ttinclude" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
