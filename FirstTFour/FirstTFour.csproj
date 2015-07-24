@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bar.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bar.tt</DependentUpon>
+    </Compile>
     <Compile Include="Foo.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -72,6 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Bar.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Bar.cs</LastGenOutput>
+    </None>
     <None Include="Foo.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Foo.cs</LastGenOutput>

@@ -1,6 +1,5 @@
 ﻿ 
  
-
 		
 using System;
 using System.Collections.Generic;
@@ -10,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace FirstTFour
 {
-    public class Foo
+    public class Bar
     {
         public string Name
         {
             get
             {
-                return "Foo";
+                return "Bar";
             }
         }
     }

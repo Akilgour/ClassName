@@ -8,5 +8,12 @@ namespace FirstTFour
 {
     class CopyClass
     {
+        public string Name
+        {
+            get
+            {
+                return "CopyClass";
+            }
+        }
     }
 }
